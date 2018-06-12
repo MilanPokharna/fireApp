@@ -207,27 +207,10 @@ public class MainActivity extends AppCompatActivity {
             {
                 if (requestCode == carema_intent) {
                     Bitmap photo = (Bitmap) data.getExtras().get("data");
-                    img.setImageBitmap(photo);
-
-
-//                    
+                    img.setImageBitmap(photo);                 
                 }
             }
         }
-//            else if (requestCode == carema_intent) {
-//                BitmapFactory.Options options = new BitmapFactory.Options();
-//                final Bitmap bmp = BitmapFactory.decodeFile(fileUri.getPath(),options);
-//                img.setVisibility(View.VISIBLE);
-//                img.setImageBitmap(bmp);
-//                StorageReference filePath = mstorageRef.child("photos").child(fileUri.getLastPathSegment());
-//                filePath.putFile(fileUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-//                    @Override
-//                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-//                        Toast.makeText(MainActivity.this, "Uplaod Done", Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-//
-//                    }
 
                 }
             }
